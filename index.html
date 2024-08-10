@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERMS AND CONDITIONS</title>
+    <style>
+        /* Fullscreen overlay */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #000; /* Black background for high contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999; /* Ensure it sits on top of all content */
+        }
+
+        /* Loader styling */
+        .loader {
+            width: 80px;
+            height: 80px;
+            border: 16px solid #f3f3f3; /* Light grey background */
+            border-top: 16px solid #3498db; /* Green color for the spinner */
+            border-radius: 50%;
+            animation: spin 3.5s linear infinite;
+        }
+
+        /* Animation */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(720deg); }
+        }
+
+        /* Hide content until loading is complete */
+        .hidden-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading screen -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Main content -->
+    <div class="hidden-content" id="main-content">
+            <h1>Terms and Conditions</h1>
+            <p><strong>Last Updated: [12/08/2024]</strong></p>
+        
+            <p>Welcome to E BUILD LEARNING. By using our app, you agree to the following terms and conditions. Please read them carefully.</p>
+        
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing or using E BUILD LEARNING, you agree to be bound by these Terms and Conditions and our Privacy Policy. If you do not agree with any part of these terms, please do not use our app.</p>
+        
+            <h2>2. User Eligibility</h2>
+            <p>To use E BUILD LEARNING, you must be at least [minimum age] years old or have the consent of a parent or guardian. By using the app, you represent and warrant that you meet these requirements.</p>
+        
+            <h2>3. Account Registration</h2>
+            <p>To access certain features of E BUILD LEARNING, you may need to create an account. You agree to provide accurate, complete, and current information and to update it as necessary. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</p>
+        
+            <h2>4. Intellectual Property</h2>
+            <p>All content and materials on E BUILD LEARNING, including but not limited to text, graphics, logos, and software, are the property of E BUILD LEARNING or its licensors and are protected by intellectual property laws. You may not reproduce, distribute, or create derivative works from any content without our prior written permission.</p>
+        
+            <h2>5. User Conduct</h2>
+            <p>You agree to use E BUILD LEARNING only for lawful purposes and in accordance with these terms. Prohibited activities include but are not limited to:</p>
+            <ul>
+              <li>Posting or transmitting any content that is unlawful, harmful, threatening, abusive, or otherwise objectionable.</li>
+              <li>Impersonating any person or entity or misrepresenting your affiliation with any person or entity.</li>
+              <li>Engaging in any activity that interferes with or disrupts the app.</li>
+            </ul>
+        
+            <h2>6. Termination</h2>
+            <p>We reserve the right to suspend or terminate your access to E BUILD LEARNING at our discretion, without notice, for any reason, including if you violate these Terms and Conditions.</p>
+        
+            <h2>7. Disclaimers</h2>
+            <p>E BUILD LEARNING is provided "as is" and "as available." We make no warranties, express or implied, regarding the app’s performance, availability, or content. We disclaim all liability for any errors or omissions in the app.</p>
+        
+            <h2>8. Limitation of Liability</h2>
+            <p>To the fullest extent permitted by law, E BUILD LEARNING shall not be liable for any indirect, incidental, special, or consequential damages arising from or related to your use of the app, even if we have been advised of the possibility of such damages.</p>
+        
+            <h2>9. Governing Law</h2>
+            <p>These Terms and Conditions are governed by and construed in accordance with the laws of [INDIA , HARYANA]. Any disputes arising under or in connection with these terms shall be subject to the exclusive jurisdiction of the courts located in [Your Location].</p>
+        
+            <h2>10. Changes to Terms</h2>
+            <p>We may update these Terms and Conditions from time to time. We will notify you of any significant changes by posting the new terms on the app. Your continued use of E BUILD LEARNING after such changes constitutes your acceptance of the revised terms.</p>
+        
+            <h2>11. Contact Information</h2>
+            <p>If you have any questions about these Terms and Conditions, please contact us at:</p>
+            <p><strong>E BUILD LEARNING</strong><br></p>
+             <p> [INDIA , HARYANA , JIND]<br>
+              [zxy3455@gmail.com]<br>
+              </p>
+        
+            </body>
+        
+            </html>
+    </div>
+
+    <script>
+        // Simulate a loading delay
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const loader = document.getElementById('loading-overlay');
+                const content = document.getElementById('main-content');
+                loader.style.display = 'none'; // Hide the loading screen
+                content.style.display = 'block'; // Show the main content
+            }, 3000); // 3 seconds delay
+        });
+    </script>
+</body>
+</html>
